@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    max-width: 1200px;
+    background-image: linear-gradient(to right,#c9d3fd,#c4edfc);
+    padding: 15px;
+}
+
+.head{
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.head:after{
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 0.5em;
+    width: 20%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 2px solid #000000;
+}
+
+.image-container{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic{
+    width: 33.3%;
+}
+
+.team{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.content{
+    text-align: center;
+    position: relative;
+    top: -95px;
+}
+
+.info{
+    color: #f8f8f8;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.info2{
+    color: #f8f8f8;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.display{
+    position: relative;
+    top: -588px;
+    text-align: center;
+    background-color: #000000e3;
+    width: 98.5%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.2ms ease-in-out;
+    -webkit-transition: all 0.2ms ease-in-out;
+    -moz-transition: all 0.2ms ease-in-out;
+    -ms-transition: all 0.2ms ease-in-out;
+    -o-transition: all 0.2ms ease-in-out;
+}
+
+.content2{
+    padding-top: 94%;
+    padding-bottom: 5px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.circle{
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.fa{
+    color: #000000cb;
+    font-size: 20px;
+}
+
+.actual + .display{
+    display: none;
+}
+
+.actual:hover + .display{
+    display: block;
+    visibility: visible;
+}
